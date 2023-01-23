@@ -1,50 +1,49 @@
 // Variables
 const model = document.querySelector('#model');
-const minium = document.querySelector('#min');
-const maximum = document.querySelector('#max')
+const minium = document.querySelector('#minium');
+const maximum = document.querySelector('#maximum')
 const capacity = document.querySelector('#capacity');
 const color = document.querySelector('#color');
-const result = document.querySelector('#products');
 
 // Data to search
 
 const dataSearch = {
     model: '',
-    min: '',
-    max: '',
+    minium: '',
+    maximum: '',
     capacity: '',
     color: ''
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    showIphones();
+    showIphones(iphones);
 })
 
 
 // Functions
 
-model.addEventListener('input', e=> {
-    dataSearch.model = e.target.value
+model.addEventListener('input', e => {
+    dataSearch.model = e.target.value;
     filterIphone();
 })
 
-minium.addEventListener('input', e=> {
-    dataSearch.minium = e.target.value
+minium.addEventListener('input', e => {
+    dataSearch.minium = e.target.value;
     filterIphone();
 })
 
-maximum.addEventListener('input', e=> {
-    dataSearch.maximum = e.target.value
+maximum.addEventListener('input', e => {
+    dataSearch.maximum = e.target.value;
     filterIphone();
 })
 
-capacity.addEventListener('input', e=> {
-    dataSearch.capacity = e.target.value
+capacity.addEventListener('input', e => {
+    dataSearch.capacity = e.target.value;
     filterIphone();
 })
 
-color.addEventListener('input', e=> {
-    dataSearch.color = e.target.value
+color.addEventListener('input', e => {
+    dataSearch.color = e.target.value;
     filterIphone();
 })
 
@@ -58,23 +57,23 @@ function cleanHTML() {
 }
 
 
-function showIphones() {
+function showIphones(iphones) {
     cleanHTML();
 
-    iphones.forEach( iphone => {
+    const container = document.querySelector('#products');
+    
+    iphones.forEach(iphone => {
         const iphoneHTML = document.createElement('card');
-
         iphoneHTML.innerHTML = `
         <img src=${iphone.img} class="img-iphone">
         <div class="info-product">
-            <h3>Mode: ${iphone.model}</h3>
+            <h4>${iphone.model}</h4>
             <p class="capacity">Capacity: ${iphone.capacity}</p>
             <p class="price">price: ${iphone.price} €</p>
             <p class="color">Color: ${iphone.color}</p>
         </div> 
-        
         `;
-        result.appendChild(iphoneHTML); 
+        container.appendChild(iphoneHTML); 
     }) 
 }
 
@@ -105,17 +104,17 @@ function filterModel(iphone) {
 
 function filterMinium(iphone) {
     if(dataSearch.minium) {
-        return iphone.minium >= dataSearch.minium;
+        return iphone.price >= dataSearch.minium;
     }
     return iphone;
 }
 
 function filterMaximum(iphone) {
     if(dataSearch.maximum) {
-        return iphone.maximum <= dataSearch.maximum;
+        return iphone.price <= dataSearch.maximum;
     }
     return iphone;
-}gi
+}
 
 function filterCapacity(iphone) {
     if(dataSearch.capacity) {
