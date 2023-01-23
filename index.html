@@ -7,29 +7,28 @@
     <title>iPhone Only Shop JS
     </title>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./dist/output.css">
+   
 </head>
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
+    <header id="header">
+        <div class="container max-w-full">
+            <div class="flex-row flex bg-[#1f4e70] p-2 columns-4 justify-around items-center">
+                <div class="columns-1 basis-1/4">
                     <img src="img/Logo-Banagui.png" id="logo">
                 </div>
-                <div class="two columns u-pull-right">
+                <div class="columns-1 p-2">
                     <ul>
                         <li class="submenu">
-                                <img src="img/cart.png" id="img-cart">
-                                <div id="carrito">
-                                        <table id="cart-list" class="u-full-width">
+                                <img src="img/cart.png" id="img-cart" class="w-12">
+                                <div id="cart">
+                                        <table id="cart-list" class="columns-4">
                                             <thead>
                                                 <tr>
-                                                    <th>Picture</th>
-                                                    <th>Model</th>
-                                                    <th>price</th>
-                                                    <th>Quantity</th>
+                                                    <th class="p-4">Picture</th>
+                                                    <th class="p-4">Model</th>
+                                                    <th class="p-4">price</th>
+                                                    <th class="p-4">Quantity</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -44,13 +43,13 @@
         </div>
         </header>
 
-        <h1>Find iPhone</h1>
+        <h1 class="font-sans text-center text-xl text-blue-500">Find iPhone</h1>
 
         <div class="container">
 
             <form id="search">
                 <div class="row">
-                    <div class="three columns">
+                    <div class="grid-cols-1">
                         <label for="model">Model</label>
                         <select class="u-full-width" id="model">
                             <option value="">Select</option>
@@ -59,7 +58,7 @@
                             <option value="iPhone 13">iPhone 13</option>
                         </select>
                     </div>
-                    <div class="three columns">
+                    <div class="grid-cols-1">
                         <label for="year">Capacity</label>
                         <select class="u-full-width" id="capacity">
                             <option value="">Select</option>

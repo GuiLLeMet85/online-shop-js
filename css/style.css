@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.submenu {
+    position: relative;
+}
+
+.submenu #cart{
+    display: none;
+}
+.submenu:hover #cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:200%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
