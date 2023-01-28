@@ -1,10 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html,js}"],
+  content: [ ,
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
+    './public/index.html',
+    './src/**/*.{html,js}',
+],
   theme: {
     extend: {
-      color: {
-        'logo-blue': '1f4e70',
+      colors: {
+        'menu': "#1f4e70",
+        apple: "#f5f5f7"
+      },
+      width: {
+        content: "fit-content",
+      },
+      top: {
+        20: "5rem",
       }
     },
   },
