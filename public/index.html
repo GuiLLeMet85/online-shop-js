@@ -11,16 +11,23 @@
 
 </head>
 <body>
-    <header id="header" class="text-left">
-        <div class="max-w-full bg-[#1f4e70] p-4 h-4rem">
+    <header id="header">
+        <div class="max-w-full bg-[#1f4e70] p-2 h-5">
             <div class=" flex-row flex p-4 justify-between items-center">
-                <div class="columns-1 basis-1/4">
-                    <img src="img/Logo-Banagui.png" id="logo" class="w-10 rounded-md" alt="logo Banagui">
+                <div>
+                    <img src="img/Logo-Banagui.png" id="logo" class="w-10 rounded-md h-10" alt="logo Banagui">
                 </div>
-                <div class="columns-1">
+                <div class="search-sect rounded-md">
+                    <form action="#" id="toFind" method="post" class="form-search">
+                        <input class="u-full-width" type="text" placeholder="Search" id="search">
+                        <input type="submit" id="submit-search" class="submit-search">
+                    </form>
+                </div>
+
+                <div>
                     <ul>
                         <li class="submenu">
-                                <img src="img/cart.png" id="img-cart" class="w-2.5" alt="cart icon">
+                                <img src="img/cart.png" id="img-cart" class="w-2.5 h-8" alt="cart icon">
                                 <div id="cart">
                                         <table id="cart-list" class="columns-4">
                                             <thead>
@@ -42,16 +49,16 @@
             </div> 
         </div>
     </header>
-        <div class="h-10 bg-img ">
+        <div>
             <img src="img/iphone-14-model.jpeg" class="w-5" alt="iPhone 14 & 14 Plus">
         </div>
-        <div class="bg-black p-4 sect-bgimg">
-            <h1 class="font-sans text-center text-xl text-white">Find your iPhone</h1>
+        <div class="bg-black p-4">
+            <h1 class="font-sans text-center text-xl text-white">Find the specification of your iPhone</h1>
         </div>
         <div class="text-xs p-4 max-w-full">
 
             <form id="search">
-                <div class="flex flex-col">
+                <div class="grid-cols-5">
                         <div>
                             <label for="model">Model</label>
                                 <select id="model">
@@ -125,7 +132,7 @@
         </div> 
 
         <div class="container">
-            <h2>iPhones</h2>       
+            <h2>iPhones available:</h2>       
                 <div id="products" class="four columns"></div>
         </div>
         

@@ -645,10 +645,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-body {
-  font-family: "DIN Alternate", sans-serif;
-  font-size: 16px;
-}
 
 .container {
   position: relative;
@@ -658,6 +654,32 @@ body {
   padding: 0 20px;
   box-sizing: border-box;
 }
+
+.search-sect form {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.search-sect form #search {
+  height: 40px;
+  margin-bottom: 0;
+  padding:1rem;
+}
+.search-sect .submit-search {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 1rem;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(/public/img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
 
 .submenu {
   position: relative;
@@ -679,14 +701,22 @@ body {
   min-width: 300px;
 }
 
-.img-iphones {
-  width: 50%;
-  margin: auto;
-}
-
-.bg-img {
-  background-color: #f5f5f7;
-  height: 15rem;
-  padding: 1rem;
+.product .info-product{
+  position: relative;
+  display: inline-block;
+  text-align: center;
 } 
 
+.info-product .header-iphone {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+
+.product .specif-product {
+  display: flex;
+  justify-content: space-evenly;
+
+}

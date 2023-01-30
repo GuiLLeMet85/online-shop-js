@@ -8,6 +8,9 @@ module.exports = {
 ],
   theme: {
     extend: {
+      backgroundImage: {
+        'lupa-img': "url('/public/img/lupa.png')", 
+      },
       colors: {
         'menu': "#1f4e70",
         apple: "#f5f5f7"

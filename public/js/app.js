@@ -65,12 +65,25 @@ function showIphones(iphones) {
     iphones.forEach(iphone => {
         const iphoneHTML = document.createElement('card');
         iphoneHTML.innerHTML = `
-        <img src=${iphone.img} class="img-iphone">
-        <div class="info-product">
-            <h4>${iphone.model}</h4>
-            <p class="capacity">Capacity: ${iphone.capacity}</p>
-            <p class="price">price: ${iphone.price} €</p>
-            <p class="color">Color: ${iphone.color}</p>
+        <div class="product my-1.5">
+            
+            <div class="info-product">
+                <h3 class="header-iphone">${iphone.model}</h3>
+                <img src=${iphone.img} class="img-iphone">
+                
+            </div>
+            <div class="specif-product p-2">
+                <p class="capacity">Capacity: ${iphone.capacity}</p>
+                <p class="color">Color: ${iphone.color}</p>
+                
+            </div>
+            <div>
+                <p class="text-center font-medium p-4">${iphone.price} €</p>
+            </div>
+            <div clas="mt-3 mb-1">
+                <a href="#" class="text-center p-4" data-id="1">Add to cart</a>
+            </div>
+            
         </div> 
         `;
         container.appendChild(iphoneHTML); 
