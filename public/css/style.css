@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .search-sect form {
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  .search-sect form #search {
+    height: 40px;
+    margin-bottom: 0;
+    padding:1rem;
+  }
+  .search-sect .submit-search {
+      position: absolute;
+      right:0;
+      top:0;
+      height: 100%;
+      padding: 1rem;
+      display: block;
+      text-indent: -9999px;
+      width: 50px;
+      background-image: url(/public/img/lupa.png);
+      background-position: right center;
+      background-repeat: no-repeat;
+      border:none;
+  }
+  
+  
+  .submenu {
+    position: relative;
+  }
+  
+  .submenu #cart{
+    display: none;
+  }
+  
+  .submenu:hover #cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+  }
+  
+  .product .info-product{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  } 
+  
+  .info-product .header-iphone {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

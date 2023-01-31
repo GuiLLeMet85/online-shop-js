@@ -68,20 +68,20 @@ function showIphones(iphones) {
         <div class="product my-1.5">
             
             <div class="info-product">
-                <h3 class="header-iphone">${iphone.model}</h3>
+                <h3 class="header-iphone text-2xl">${iphone.model}</h3>
                 <img src=${iphone.img} class="img-iphone">
                 
             </div>
-            <div class="specif-product p-2">
+            <div class="flex justify-evenly p-2 font-medium text-base">
                 <p class="capacity">Capacity: ${iphone.capacity}</p>
                 <p class="color">Color: ${iphone.color}</p>
                 
             </div>
             <div>
-                <p class="text-center font-medium p-4">${iphone.price} €</p>
+                <p class="text-center font-semibold text-lg p-2">${iphone.price} €</p>
             </div>
-            <div clas="mt-3 mb-1">
-                <a href="#" class="text-center p-4" data-id="1">Add to cart</a>
+            <div class="p-3 mb-1 text-center">
+                <a href="#" class="text-center" data-id="1">Add to cart</a>
             </div>
             
         </div> 

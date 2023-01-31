@@ -7,19 +7,19 @@
     <title>iPhone Only Shop JS
     </title>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="/dist/output.css" rel="stylesheet"/>
 
 </head>
 <body>
     <header id="header">
-        <div class="max-w-full bg-[#1f4e70] p-2 h-5">
+        <div class="max-w-full bg-[#1f4e70] p-2 h-15">
             <div class=" flex-row flex p-4 justify-between items-center">
                 <div>
                     <img src="img/Logo-Banagui.png" id="logo" class="w-10 rounded-md h-10" alt="logo Banagui">
                 </div>
                 <div class="search-sect rounded-md">
                     <form action="#" id="toFind" method="post" class="form-search">
-                        <input class="u-full-width" type="text" placeholder="Search" id="search">
+                        <input class="u-full-width rounded-md" type="text" placeholder="Search" id="search">
                         <input type="submit" id="submit-search" class="submit-search">
                     </form>
                 </div>
@@ -27,7 +27,7 @@
                 <div>
                     <ul>
                         <li class="submenu">
-                                <img src="img/cart.png" id="img-cart" class="w-2.5 h-8" alt="cart icon">
+                                <img src="img/cart.png" id="img-cart" class="h-8" alt="cart icon">
                                 <div id="cart">
                                         <table id="cart-list" class="columns-4">
                                             <thead>
@@ -50,7 +50,7 @@
         </div>
     </header>
         <div>
-            <img src="img/iphone-14-model.jpeg" class="w-5" alt="iPhone 14 & 14 Plus">
+            <img src="img/iphone-14-model.jpeg" alt="iPhone 14 & 14 Plus">
         </div>
         <div class="bg-black p-4">
             <h1 class="font-sans text-center text-xl text-white">Find the specification of your iPhone</h1>
@@ -132,7 +132,7 @@
         </div> 
 
         <div class="container">
-            <h2>iPhones available:</h2>       
+            <h2 class="p4 font-medium">iPhones available:</h2>       
                 <div id="products" class="four columns"></div>
         </div>
         
